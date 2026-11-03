@@ -4,7 +4,20 @@ import { Resvg } from "@resvg/resvg-js"
 import satori from "satori"
 import { type CardProps, card, OG_HEIGHT, OG_WIDTH } from "./card.js"
 
-export { type CardProps, clip, color, OG_HEIGHT, OG_WIDTH } from "./card.js"
+export {
+  type Accent,
+  accents,
+  type Background,
+  type CardProps,
+  clip,
+  color,
+  type HeadlineCardProps,
+  type MarkCardProps,
+  OG_HEIGHT,
+  OG_WIDTH,
+  type Stat,
+} from "./card.js"
+export type { Scene } from "./scenes.js"
 
 type Fonts = Parameters<typeof satori>[1]["fonts"]
 
